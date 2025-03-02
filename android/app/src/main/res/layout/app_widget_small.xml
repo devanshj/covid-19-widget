@@ -1,0 +1,73 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:orientation="vertical"
+    android:paddingVertical="6dp"
+    android:paddingHorizontal="5dp"
+    android:background="@drawable/widget_background">
+
+    <!--
+        mt = -0.321 * ts
+        mb = -0.286 * ts
+    -->
+
+    <TextView
+        android:id="@+id/widgetCountTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-5.136dp"
+        android:layout_marginBottom="-4.576dp"
+        android:textSize="16dp"
+        android:includeFontPadding="false"
+        android:lineSpacingExtra="0dp"
+        android:lineSpacingMultiplier="0"
+        android:fontFamily="@font/ibm_plex_mono_medium" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="6dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-3.852dp"
+        android:layout_marginBottom="-3.432dp"
+        android:alpha="0.6">
+
+            <TextView
+                android:id="@+id/widgetDeltaCountTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:includeFontPadding="false"
+                android:lineSpacingExtra="0dp"
+                android:lineSpacingMultiplier="0"
+                android:fontFamily="@font/ibm_plex_mono_medium" />
+
+            <LinearLayout
+                android:layout_width="2dp"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:id="@+id/widgetStatusTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:includeFontPadding="false"
+                android:lineSpacingExtra="0dp"
+                android:lineSpacingMultiplier="0"
+                android:fontFamily="@font/ibm_plex_mono_medium" />
+
+            <TextView
+                android:id="@+id/widgetLocationTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:includeFontPadding="false"
+                android:lineSpacingExtra="0dp"
+                android:lineSpacingMultiplier="0"
+                android:fontFamily="@font/ibm_plex_mono_medium" />
+    </LinearLayout>
+
+
+</LinearLayout>

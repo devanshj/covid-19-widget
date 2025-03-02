@@ -1,0 +1,140 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="180dp"
+    android:layout_height="110dp"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@drawable/widget_background">
+
+    <!--
+        mt = -0.321 * ts
+        mb = -0.286 * ts
+    -->
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-4.494dp"
+        android:layout_marginBottom="-4.004dp"
+        android:alpha="0.6">
+
+        <TextView
+            android:id="@+id/widgetStatusTextView"
+            android:clickable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/ibm_plex_mono_medium"
+            android:includeFontPadding="false"
+            android:lineSpacingExtra="0dp"
+            android:lineSpacingMultiplier="0"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/widgetLocationTextView"
+            android:clickable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/ibm_plex_mono_medium"
+            android:includeFontPadding="false"
+            android:lineSpacingExtra="0dp"
+            android:lineSpacingMultiplier="0"
+            android:textSize="14dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="6dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-7.704dp"
+        android:layout_marginBottom="-6.8646dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/widgetCountTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24dp"
+            android:includeFontPadding="false"
+            android:lineSpacingExtra="0dp"
+            android:lineSpacingMultiplier="0"
+            android:fontFamily="@font/ibm_plex_mono_medium" />
+
+        <LinearLayout
+            android:layout_width="2dp"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:id="@+id/widgetDeltaCountTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:paddingTop="3.210dp"
+            android:textSize="14dp"
+            android:includeFontPadding="false"
+            android:lineSpacingExtra="0dp"
+            android:lineSpacingMultiplier="0"
+            android:fontFamily="@font/ibm_plex_mono_medium"
+            android:alpha="0.6"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="6dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-4.494dp"
+        android:layout_marginBottom="-4.004dp"
+        android:alpha="0.6">
+
+        <TextView
+            android:id="@+id/widgetGraphTypeTextView"
+            android:clickable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/ibm_plex_mono_medium"
+            android:includeFontPadding="false"
+            android:lineSpacingExtra="0dp"
+            android:lineSpacingMultiplier="0"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/widgetGraphScaleTextView"
+            android:clickable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/ibm_plex_mono_medium"
+            android:includeFontPadding="false"
+            android:lineSpacingExtra="0dp"
+            android:lineSpacingMultiplier="0"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/widgetGraphTimeSeriesTextView"
+            android:clickable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/ibm_plex_mono_medium"
+            android:includeFontPadding="false"
+            android:lineSpacingExtra="0dp"
+            android:lineSpacingMultiplier="0"
+            android:textSize="14dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="6dp" />
+
+    <ImageView
+        android:id="@+id/widgetGraphImageView"
+        android:layout_width="match_parent"
+        android:layout_height="35dp" />
+</LinearLayout>

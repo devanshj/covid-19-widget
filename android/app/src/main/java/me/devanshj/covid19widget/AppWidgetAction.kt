@@ -1,0 +1,10 @@
+package me.devanshj.covid19widget
+
+enum class AppWidgetAction {
+    ON_STATUS_CLICK,
+    ON_LOCATION_CLICK,
+    ON_GRAPH_TYPE_CLICK,
+    ON_GRAPH_TIME_SERIES_CLICK,
+    ON_GRAPH_SCALE_TYPE_CLICK
+}
+const val EXTRA_APP_WIDGET_ACTION = "EXTRA_APP_WIDGET_ACTION"
