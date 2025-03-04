@@ -34,7 +34,8 @@ fun cumulative(counts: List<Pair<Date, Int>>) =
 
 fun fetchDailyStats(location: AppWidgetState.Location): Pair<List<List<Pair<Date, Int>>>, (AppWidgetState.Status) -> List<Pair<Date, Int>>> {
     val rows =
-        URL("https://api.covid19india.org/states_daily.json").readText()
+        //URL("https://api.covid19india.org/states_daily.json").readText()
+        URL("https://web.archive.org/web/20200512011511if_/https://api.covid19india.org/states_daily.json").readText()
             .let { raw -> JSONObject(raw) }
             .getJSONArray("states_daily")
             .let { arr -> List(arr.length()) { i -> arr.getJSONObject(i) } }
@@ -93,7 +94,8 @@ fun fetchDailyStats(location: AppWidgetState.Location): Pair<List<List<Pair<Date
 }
 
 fun fetchCountAndDelta(location: AppWidgetState.Location, status: AppWidgetState.Status): Pair<Int, Int> =
-    URL("https://api.covid19india.org/data.json").readText()
+    //URL("https://api.covid19india.org/data.json").readText()
+    URL("https://web.archive.org/web/20200512011511if_/https://api.covid19india.org/data.json").readText()
         .let { raw -> JSONObject(raw) }
         .getJSONArray("statewise")
         .let { arr -> List(arr.length()) { i -> arr.getJSONObject(i) } }
